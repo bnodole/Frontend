@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .radial{
+            height: 500px;
+            width: 700px;
+            background: radial-gradient(circle at center, 
+        #ff0066 0%, 
+        #8a0055 40%, 
+        #2b005f 70%, 
+        #000066 100%);
+        }
+        .conical{
+            height: 500px;
+            width: 700px;
+            background: repeating-conic-gradient(from 0deg,red 0deg,orange 5deg,yellow 10deg,red 20deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="radial"></div>
+        <div class="conical"></div>
+    </div>
+</body>
+</html>

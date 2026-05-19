@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 100px;
+        }
+
+        .animation1{
+            animation: slide 4s infinite;
+        }
+
+        @keyframes slide {
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: orange;
+            }
+            75%{
+                background-color: yellowgreen;
+            }
+            100%{
+                transform: translate(500px);
+                background-color: green;
+            }
+        }
+
+        .animation2{
+            animation: bounce 3s linear infinite;
+        }
+
+        @keyframes bounce {
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(100px,-50px);
+            }
+            50%{
+                transform: translate(200px,0px);
+            }
+            75%{
+                transform: translate(300px,-50px);
+            }
+            100%{
+                transform: translate(400px,0px);
+            }
+        }
+
+        .animation3{
+            animation: spin 5s infinite;
+        }
+
+        @keyframes spin {
+            0%{
+                transform: rotate(0) translate(0px);
+            }
+            25%{
+                transform: translate(100px) rotate(180deg);
+            }
+            50%{
+                transform: translate(200px) rotate(360deg);
+            }
+            75%{
+                transform: translate(300px) rotate(540deg);
+            }
+            100%{
+                transform: translate(400px) rotate(720deg);
+            }
+        } 
+
+        /* Weird Rotation */
+        /* @keyframes spin {
+            0%{
+                transform: rotate(0) translate(0px);
+            }
+            25%{
+                transform: rotate(180deg) translate(100px);
+            }
+            50%{
+                transform: rotate(360deg) translate(200px);
+            }
+            75%{
+                transform: rotate(540deg) translate(300px);
+            }
+            100%{
+                transform: rotate(720deg) translate(400px);
+            }
+        } */
+
+        .animation4{
+            animation: four-direction 5s linear infinite;
+        }
+
+        @keyframes four-direction {
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(400px,0);
+            }
+            50%{
+                transform: translate(400px,400px);
+            }
+            75%{ 
+                transform: translate(0px,400px);
+            }
+            100%{
+                transform: translate(0px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box animation1">Slide 4-Color Change</div>
+        <div class="box animation2">Bounce Through</div>
+        <div class="box animation3">Rotate Through</div>
+        <div class="box animation4">Four-direction</div>
+    </div>
+</body>
+</html>

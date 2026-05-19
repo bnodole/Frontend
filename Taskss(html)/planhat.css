@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(8d19f7cea4bb799e34a3f1c0173ef6bf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(30px);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container{
+    height: 100vh;
+    padding: 20px;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 13% 87%;
+}
+
+.header{
+    grid-area: 1/1/2/3;
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.logo{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+button{
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+#bt_login{
+    width: 80px;
+    background-color: transparent;
+}
+
+#bt_demo{
+    width: 130px;
+    background-color: rgb(255, 72, 0);
+    border: none;
+}
+
+.section1{
+    border-right: 1px solid grey;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.modules,.features,.spotlight{
+    /* background-color: aqua; */
+    height: 70%;
+}
+
+.modules ul li a,.features ul li a{
+    color: white;
+}
+
+.features ul{
+    color: white;
+    gap: 40px;
+}
+
+h4{
+    text-transform: uppercase;
+}
+
+h3,p{
+    color: white;
+}
+
+.section2{
+    padding: 100px 50px 0px 30px;
+}
+
+.section2 p{
+    color: rgb(158, 158, 158);
+}

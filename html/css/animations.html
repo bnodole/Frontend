@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+        }
+
+        .fade{
+            animation: fadeInOut 6s ease-in-out infinite;
+        }
+
+        @keyframes fadeInOut {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+        .slide{
+            animation: slide 3s alternate infinite;
+        }
+
+        @keyframes slide {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translate(500px);
+            }
+        }
+
+        .bounce{
+            animation: bounce 4s infinite;
+        }
+
+        @keyframes bounce {
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-100px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+
+        .rotate{
+            animation: rotate360 3s infinite;
+        }
+
+        @keyframes rotate360 {
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box fade">fade</div>
+        <div class="box slide">slide</div>
+        <div class="box bounce">bounce</div>
+        <div class="box rotate">rotate</div>
+        <div class="box zoom">zoom</div>
+        <div class="box flip">flip</div>
+        <div class="box skew">skew</div>
+        <div class="box four-direction">four-direction</div>
+    </div>
+</body>
+</html>

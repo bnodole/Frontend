@@ -1,0 +1,55 @@
+/* Selector Tyoes */
+
+/* Universal Selector {*} */
+/* Class Selector {.} */
+/* Id Selector {#} */
+/* Tag Selector {tag name} */
+/* Descendent Selector {parent - child} */
+/* Grouping Selector {,} */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(66, 191, 223);
+    width: 100vw;
+    height: 100vh;
+}
+
+#greet{
+    color: bisque;
+}
+
+p{
+    color: blueviolet;
+    background-color: yellow;
+}
+
+.container .secongContainer{
+    height: 50vh;
+    width: 50vw;
+    background-color: blue;
+}
+
+.header{
+    text-align: center;
+    text-decoration: underline overline wavy red;
+}
+
+.header:hover{
+    text-decoration: underline overline solid white;
+}
+
+.description{
+    text-transform: uppercase;
+    color: cadetblue;
+}
+
+
+button:hover{
+    color:aliceblue;
+    border: 1px solid brown;
+    border-radius: 0px 5px 0px 5px;
+}
