@@ -1,3 +1,25 @@
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark , .dark *));
+
+@theme{
+    --color-primary: #f59e0b;
+}
+
+@layer  components{
+    .container{
+        @apply max-w-6xl mx-auto px-5
+    }
+
+    .primary_btn{
+        @apply rounded-lg bg-amber-600 font-semibold px-5 py-3 text-white
+    }
+
+    .secondary_btn{
+        @apply rounded-lg bg-transparent border-2 border-white font-semibold px-5 py-2 text-white
+    }
+
+    .Content1_design{
+        @apply rounded-4xl bg-amber-600 font-semibold px-8 py-2 text-lg
+    }
+}

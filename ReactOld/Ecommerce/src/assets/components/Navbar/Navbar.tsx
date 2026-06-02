@@ -1,7 +1,7 @@
 import { FaPhone } from 'react-icons/fa'
-import LogoIcon from "../images/Logo.png";
-import { NavbarContent } from "../constant/NavbarContent";
-import { Darkmode } from './Darkmode';
+import LogoIcon from "../../images/Logo.png";
+import { NavbarContent } from "../../constant/NavbarContent";
+import { Darkmode } from '../Darkmode';
 
 export const Navbar = () => {
   return (
@@ -15,7 +15,7 @@ export const Navbar = () => {
                 <p>Free Shipping for Shopping over Rs.2000</p>
             </div>
         </div>
-        <div className='flex justify-between items-center dark:bg-black dark:text-white'>
+        <div className='flex justify-between items-center dark:bg-black dark:text-white container'>
             <div className='h-20 w-20'>
                     <img src={LogoIcon} alt="" />
             </div>
@@ -28,7 +28,7 @@ export const Navbar = () => {
                             </li>
                         ))
                     }
-                    <button type="submit" className='bg-yellow-500 px-2 py-1 rounded-lg'>Shop Now</button>
+                    <button type="submit" className='primary_btn'>Shop Now</button>
                     <Darkmode/>
                 </ul>
             </div>
