@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="userName" id="username"><br>
+        <input type="text" name="email" id="email"><br>
+        <input type="submit" value="Add" id="btn_add">
+    </form>
+    <script>
+        document.getElementById("btn_add").addEventListener("click",(e)=>{
+            e.preventDefault();
+            const userName = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            localStorage.setItem("data",JSON.stringify({Name:userName,Email:email}));//This to save to local Storage
+            sessionStorage.setItem("data",JSON.stringify({Name:userName,Email:email}));//This to save to session
+        });
+    </script>
+</body>
+</html>
